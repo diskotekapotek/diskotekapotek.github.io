@@ -1,11 +1,6 @@
 
 body{
-background-color: #1B1D1A;
-background-image: url(planta2.png);
-background-repeat: repeat-x;
-background-attachment: fixed;
-background-position: bottom;
-background-size: 20%;
+background-color: black;
 padding: 0%;
 margin: 0%;
 font-size: 90%;
@@ -54,7 +49,9 @@ header img {
   top: 0%;
   left: 50%;
   /* bring your own prefixes */
-  transform: translate(-50%, -0%);
+ -webkit-transform: translate(-50%, -0%);
+ -moz-transform: translate(-50%, -0%);
+  -o-transform: translate(-50%, -0%);
 }
 
 
@@ -131,13 +128,15 @@ nav li:nth-of-type(2)
 
 /*content*/
 
-.row1 img, .row2img {
+.row1 img, .row2 img {
 	width: 70%;
 	height: auto;
 	margin-bottom: 5%;}
 	
 .picture1 {
 	display: none;}
+
+
 
 .row1, .row2 {
 	    margin-top: 2.5%;
