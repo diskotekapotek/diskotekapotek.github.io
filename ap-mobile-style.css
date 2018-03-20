@@ -19,13 +19,16 @@ width: 100%;
 }
 
 * {
-	font-family: leaguespartan;
 	color: white;
     box-sizing: border-box;
 }
 
-nav a {
-	color: black;}
+h1, h2, h3, .detailsright, footer {
+	font-family: leaguespartan;}
+
+nav, nav a  {
+	color: black;
+	font-family: leaguespartan;}
 	
 	a {
 		text-decoration: none;}
@@ -33,6 +36,25 @@ nav a {
 				content: "+";
 				color: #D86F71;
 				margin-right: 0.2em;}
+		
+#skip {
+	background: black;
+	z-index: 2;}
+#skip a
+{ 
+position:absolute; 
+left:-10000px; 
+top:auto; 
+width:1px; 
+height:1px; 
+overflow:hidden;
+} 
+#skip a:focus 
+{ 
+position:static; 
+width:auto; 
+height:auto; 
+} 
 	
 header {
 	width: 100%;
@@ -179,9 +201,6 @@ nav li:nth-of-type(2)
 	
 	.clicklink {
 		  border-bottom: 0.15em solid #d5e3e8;}
-	
-.row a, .row p {
-	font-family: bodoni;}
 
 /*footer*/
 
@@ -203,7 +222,8 @@ footer {
 	width: 100%;
     text-align: center;
     margin-bottom: 2.5%;
-    bottom: 0px;}
+    bottom: 0px;
+    font-size: 90%}
     
     #bottom-right * {
     	color: white;}

@@ -39,6 +39,26 @@ width: 100%;
 		
 h2, h3 {line-height: 0.5em;}
 
+#skip {
+	background: black;
+	z-index: 2;}
+#skip a
+{ 
+position:absolute; 
+left:-10000px; 
+top:auto; 
+width:1px; 
+height:1px; 
+overflow:hidden;
+} 
+#skip a:focus 
+{ 
+position:static; 
+width:auto; 
+height:auto; 
+} 
+
+
 header {
 	width: 100%;
 	height: auto;	
@@ -136,17 +156,17 @@ nav li:nth-of-type(2)
 
 /*content*/
 
-.row img {
+article img {
 	width: 80%;
 	height: auto;}
 	
-.row {
+article {
 	    margin-top: 2.5%;
 		margin-bottom: 20%;
 		text-align: center;}
 
-/* The grid: Four equal columns that floats next to each other */
-.column {
+/* The grid: Four equal sections that floats next to each other */
+section {
 	display: inline-block;
 	height: auto;
     width: 40%;
@@ -156,23 +176,23 @@ nav li:nth-of-type(2)
     padding: 0.5em;
 }
 
-.column * {
+section * {
 	color: white;}
 	
 .links {display:none;}
 
 /* Style the images inside the grid */
-.column img {
+section img {
     opacity: 1; 
     cursor: pointer; 
 }
 
-.column img:hover {
+section img:hover {
     opacity: 0.8;
 }
 
-/* Clear floats after the columns */
-.row:after {
+/* Clear floats after the sections */
+article:after {
     content: "";
     display: table;
     clear: both;
@@ -185,7 +205,7 @@ nav li:nth-of-type(2)
 	.clicklink {
 		  border-bottom: 0.15em solid #d5e3e8;}
 	
-.row a, .row p {
+article a, article p {
 	font-family: bodoni;
 	font-size: 110%;}
 
@@ -196,22 +216,26 @@ footer {
 	width: 100%;
 	margin-bottom: 3em;}
 	
-	#bottom-left {
+#bottom-left {
 	position: absolute;
 	left: 0px;
-	margin-left: 2.5%;
-	bottom: 0px;}
+	margin-left: 5%;
+	bottom: 0px;
+	margin-bottom: 0.5%;
+	font-size: 90%;}
 	
 #bottom-right {
 	position: absolute;
 	right: 0px;
-	margin-right: 2.5%;
-	bottom: 0px;}
+	margin-right: 5%;
+	bottom: 0px;
+	margin-bottom: 0.5%;
+	font-size: 90%;}
 	
 #bottom-center {
 	position: absolute;
 	width: 100%;
+	margin-bottom: 0.5%;
     text-align: center;
-    margin: 0%;
-    bottom: 0px;}
-
+    bottom: 0px;
+    font-size: 90%;}

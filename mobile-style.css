@@ -33,6 +33,26 @@ a:hover {
 				content: "+";
 				color: #D86F71;
 				margin-right: 0.2em;}
+				
+#skip {
+	background: black;
+	z-index: 2;}
+#skip a
+{ 
+position:absolute; 
+left:-10000px; 
+top:auto; 
+width:1px; 
+height:1px; 
+overflow:hidden;
+} 
+#skip a:focus 
+{ 
+position:static; 
+width:auto; 
+height:auto; 
+} 
+
 	
 
 img {
@@ -58,6 +78,7 @@ right: 0px;
 top: 0px;
 margin: 5% 5%;
 color: black;
+line-height: 1.5em;
 }
 
 .detailsright a {
@@ -135,7 +156,8 @@ nav li:nth-of-type(2)
 	width: 100%;
     text-align: center;
     margin-bottom: 2.5%;
-    bottom: 0px;}
+    bottom: 0px;
+    font-size: 90%}
     
     #bottom-right * {
     	color: white;}
