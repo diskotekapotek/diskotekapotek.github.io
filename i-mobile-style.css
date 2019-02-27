@@ -175,6 +175,8 @@ article {
 article h2 {
 	font-size: 90%;}
 	
+article h2 {line-height: 1em;}
+	
 
 /* The grid: Four equal sections that floats next to each other */
 section {
