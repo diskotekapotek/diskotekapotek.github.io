@@ -39,7 +39,7 @@ a:hover {
 		
 h2, h3 {line-height: 0.5em;}
 
-h2 {font-size: 135%;}
+h2 {font-size: 100%;}
 h3 {font-size: 100%;}
 
 h2, h3 {
@@ -173,7 +173,7 @@ article {
 		text-align: center;}
 		
 article h2 {
-	font-size: 110%;}
+	font-size: 90%;}
 	
 
 /* The grid: Four equal sections that floats next to each other */
