@@ -23,6 +23,7 @@ width: 100%;
 	font-family: leaguespartan;
 	color: white;
     box-sizing: border-box;
+    font-size: 90%;
 }
 
 a:hover {
@@ -40,6 +41,11 @@ h2, h3 {line-height: 0.5em;}
 
 h2 {font-size: 135%;}
 h3 {font-size: 100%;}
+h2, h3 {
+	padding-top: 2%}
+
+.topper {
+	display: none;}
 
 .videoWrapper {
 	position: relative;
