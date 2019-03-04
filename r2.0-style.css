@@ -191,7 +191,7 @@ article {
 section {
 	display: inline-block;
 	height: auto;
-    width: 40%;
+    width: 50%;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 2em;
@@ -202,6 +202,23 @@ section * {
 	color: white;}
 	
 .links {display:none;}
+
+section2 {
+	display: inline-block;
+	height: auto;
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2em;
+    padding: 0.5em;
+}
+
+section2 * {
+	color: white;}
+	
+section2 p {
+	font-size: 50%;
+	text-align: center;}
 
 /* Style the images inside the grid */
 section img {
