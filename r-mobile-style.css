@@ -7,6 +7,7 @@ font-size: 90%;
 width: 100%;
 }
 
+
 @font-face {
     font-family: 'leaguespartan';
     src: url('leaguespartan-bold.eot');
@@ -23,7 +24,6 @@ width: 100%;
 	font-family: leaguespartan;
 	color: white;
     box-sizing: border-box;
-    font-size: 90%;
 }
 
 a:hover {
@@ -39,8 +39,9 @@ a:hover {
 		
 h2, h3 {line-height: 0.5em;}
 
-h2 {font-size: 135%;}
+h2 {font-size: 100%;}
 h3 {font-size: 100%;}
+
 h2, h3 {
 	padding-top: 2%}
 
@@ -61,6 +62,7 @@ h2, h3 {
 	height: 100%;
 }
 
+
 #skip {
 	background: black;
 	z-index: 2;}
@@ -79,7 +81,6 @@ position:static;
 width:auto; 
 height:auto; 
 } 
-
 
 header {
 	width: 100%;
@@ -152,7 +153,8 @@ nav a{
     font-size: 100%;
 }
 
-	nav li:nth-of-type(1) a
+
+	nav li:nth-of-type(2) a
  {
  	color: #cb5151;
 }
@@ -161,17 +163,23 @@ nav a{
 
 /*content*/
 
-.row img {
+article img {
 	width: 70%;
 	height: auto;}
 	
-.row {
+article {
 	    margin-top: 2.5%;
 		margin-bottom: 20%;
 		text-align: center;}
+		
+article h2 {
+	font-size: 90%;}
+	
+article h2 {line-height: 1em;}
+	
 
-/* The grid: Four equal columns that floats next to each other */
-.column {
+/* The grid: Four equal sections that floats next to each other */
+section {
 	display: inline-block;
 	height: auto;
     width: 80%;
@@ -181,15 +189,14 @@ nav a{
     padding: 0.5em;
 }
 
-
-/* Clear floats after the columns */
-.row:after {
+/* Clear floats after the sections */
+article:after {
     content: "";
     display: table;
     clear: both;
 }
 	
-.row p, .row a {
+article p, article a {
 	font-family: bodoni; }
 	
 	.date {
@@ -233,4 +240,7 @@ footer {
     margin-bottom: 1.5%;
     bottom: 0px;
     display:none;}
+    
+.links {
+	display: none; }
 
